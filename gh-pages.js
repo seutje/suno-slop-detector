@@ -4,7 +4,6 @@
   var lyricsEl = document.getElementById("lyrics");
   var fileEl = document.getElementById("file");
   var fileStatusEl = document.getElementById("file-status");
-  var emptyEl = document.getElementById("empty-state");
   var resultEl = document.getElementById("result");
   var scoreEl = document.getElementById("score");
   var verdictEl = document.getElementById("verdict");
@@ -91,7 +90,6 @@
     }
 
     var sc = globalThis.SlopV2.score(text);
-    emptyEl.hidden = true;
     resultEl.hidden = false;
 
     if (sc.instrumental) {
@@ -155,7 +153,6 @@
     fileEl.value = "";
     fileStatusEl.textContent = "";
     resultEl.hidden = true;
-    emptyEl.hidden = false;
     clearNode(craftEl);
   });
 })();

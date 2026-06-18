@@ -167,7 +167,6 @@ h2 {
 }
 
 .panel-head p,
-.empty-state p,
 .disclaimer p {
   color: var(--muted);
   line-height: 1.45;
@@ -229,13 +228,6 @@ textarea {
   flex-wrap: wrap;
   gap: 10px;
   margin-top: 12px;
-}
-
-.empty-state {
-  min-height: 560px;
-  display: grid;
-  align-content: center;
-  text-align: center;
 }
 
 .score-row {
@@ -351,10 +343,6 @@ textarea {
 
   .input-panel {
     min-height: 0;
-  }
-
-  .empty-state {
-    min-height: 220px;
   }
 
   .score-row {
